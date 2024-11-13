@@ -30,3 +30,18 @@ const ferrari = new ToyCar(
     10,
     ["Realistic Interior", "Detailed Engine", "Rubber Tires"]
 );
+// Display the toy car details on the page
+function displayDetails() {
+    document.getElementById("car-name").innerText = `Name: ${ferrari.name}`;
+    document.getElementById("car-brand").innerText = `Brand: ${ferrari.brand}`;
+    document.getElementById("car-color").innerText = `Color: ${ferrari.color}`;
+    document.getElementById("car-dimensions").innerText = `Dimensions: ${ferrari.dimensions.length} x ${ferrari.dimensions.width} x ${ferrari.dimensions.height} cm`;
+    document.getElementById("car-weight").innerText = `Weight: ${ferrari.weight} grams`;
+    document.getElementById("car-material").innerText = `Material: ${ferrari.material}`;
+    document.getElementById("car-price").innerText = `Price: $${ferrari.price}`;
+    document.getElementById("car-remote").innerText = `Remote Controlled: ${ferrari.isRemoteControlled ? "Yes" : "No"}`;
+    document.getElementById("car-battery").innerText = `Battery Type: ${ferrari.batteryType}`;
+    document.getElementById("car-age").innerText = `Age Recommendation: ${ferrari.ageRecommendation}`;
+    document.getElementById("car-speed").innerText = `Max Speed: ${ferrari.maxSpeed} km/h`;
+    document.getElementById("car-features").innerText = `Features: ${ferrari.features.join(", ")}`;
+}

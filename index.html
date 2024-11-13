@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customizable Ferrari Toy Car</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ferrari 488 GTB</h1>
+        
+        <img id="car-image" src="images/red-ferrari.jpg" alt="Ferrari 488 GTB" class="car-image">
+        
+        <button id="show-details-button" onclick="toggleDetails()">Show Toy Details</button>
+        
+        <div id="details-section" class="details" style="display: none;">
+            <p id="car-name"></p>
+            <p id="car-brand"></p>
+            <p id="car-color"></p>
+            <p id="car-dimensions"></p>
+            <p id="car-weight"></p>
+            <p id="car-material"></p>
+            <p id="car-price"></p>
+            <p id="car-remote"></p>
+            <p id="car-battery"></p>
+            <p id="car-age"></p>
+            <p id="car-speed"></p>
+            <p id="car-features"></p>
+            
+            
+            <input type="text" id="new-color" placeholder="Enter new color (black)">
+            <button onclick="changeColor()">Change Car Color</button>
+        </div>
+    </div>
+    <script src="toy.js"></script>
+</body>
+</html>

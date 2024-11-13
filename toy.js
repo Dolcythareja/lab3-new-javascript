@@ -45,3 +45,15 @@ function displayDetails() {
     document.getElementById("car-speed").innerText = `Max Speed: ${ferrari.maxSpeed} km/h`;
     document.getElementById("car-features").innerText = `Features: ${ferrari.features.join(", ")}`;
 }
+// Toggle the visibility of the details section
+function toggleDetails() {
+    const detailsSection = document.getElementById("details-section");
+    if (detailsSection.style.display === "none") {
+        displayDetails(); // Load the car details
+        detailsSection.style.display = "block";
+        document.getElementById("show-details-button").innerText = "Hide Toy Details";
+    } else {
+        detailsSection.style.display = "none";
+        document.getElementById("show-details-button").innerText = "Show Toy Details";
+    }
+}

@@ -57,3 +57,25 @@ function toggleDetails() {
         document.getElementById("show-details-button").innerText = "Show Toy Details";
     }
 }
+// Change the color of the toy car and update the image
+function changeColor() {
+    const newColor = document.getElementById("new-color").value.toLowerCase();
+    const carImage = document.getElementById("car-image");
+
+    // Update the car color and display the corresponding image
+    if (newColor === "red") {
+        ferrari.color = "Red";
+        carImage.src = "images/red-ferrari.jpg";
+    } 
+    else if (newColor === "black") {
+        ferrari.color = "Black";
+        carImage.src = "images/black-ferrari.jpg";
+    } else {
+        alert("Only RED & BLACK are available as these are LIMITED EDITION!");
+        return;
+    }
+
+    // Update the displayed color in the details section
+    document.getElementById("car-color").innerText = `Color: ${ferrari.color}`;
+    alert(`Car color changed to ${ferrari.color}! Press OKAY to see results`);
+}
